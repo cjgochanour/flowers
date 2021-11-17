@@ -14,19 +14,13 @@ const flowers = [
 ]
 
 const addFlower = (flowerObject) => {
-    /*
-        This function should add an `id` property
-        to the object that was sent to the function.
-        The value of the `id` property should be 1
-        greater than the current maximum `id` in the
-        array.
-
-        Once the `id` property has been added to the,
-        object, the object should then be put into the
-        `flowers` array.
-    */
-
-
+    const lastIndex = flowers.length - 1
+    const lastFlower = flowers[lastIndex]
+    const maxID = lastFlower.id
+    const newID = maxID + 1
+  
+    flowerObject.id = newID
+    toys.push(flowerObject)
 }
 
 
