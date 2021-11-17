@@ -20,23 +20,17 @@ const addFlower = (flowerObject) => {
     const newID = maxID + 1
   
     flowerObject.id = newID
-    toys.push(flowerObject)
+    flowers.push(flowerObject)
 }
 
 
 const findExpensiveFlowers = () => {
     const expensiveFlowers = []  // Do not change this code
-
-
-    /*
-        Write a for..of loop that iterate the array
-        of flowers, and if the price of a flower is
-        greater than or equal to 1.00, it should be
-        added to the `expensiveFlowers` array.
-    */
-
-
-
+    for (const flower of flowers){
+        if (flower.price > 1){
+             expensiveFlowers.push(flower)
+        }
+    }
 
     return expensiveFlowers  // Do not change this code
 }
